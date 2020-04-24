@@ -1,0 +1,32 @@
+﻿1.取人员信息接口
+http://47.114.102.94:8081/kpi/kpi/yyPeople/getByPhone.do?phone=13812954151&code=111111
+2.短信发送接口
+yyPeople/sendMsgCode.do?phone=13812954151
+3.人员信息修改接口(post)
+yyPeople/saveNg.do
+jsonData=
+{
+    "id": "70842c86ebd344db903955e37db5039c",   -- 新建时该值为空
+    "phone": "13812954151",
+    "xm": "郦明云",
+    "zjlx": "身份证",
+    "zjhm": "321181197901305196",
+    "jfztphone": "13812954151",
+    "yyxx": "裕元实验学校"
+  }
+4.未来三天预约资源列表
+yyResource/listNg.do?phone=13812954151&xxmc=裕元实验学校
+5.预约操作接口(post)
+yyLog/saveNg.do
+jsonData=
+{
+  "parentid": "70842c86ebd344db903955e37db5039c",
+  "resourceid": "10002",
+  "phone": "13812954151",
+  "xm": "郦明云",
+  "sfz": "321181197901305196",
+  "yyxx": "裕元实验学校",
+  "yyrq": 1587312000000,
+  "yysjd": "09:00-09:30"
+}
+
